@@ -7,9 +7,12 @@ import pandas as pd
 import requests
 import plotly.express as px
 
-def generate_data() -> List[int]:
+def generate_data():
     """Generate some random data."""
-    return np.random.randint(100, 10000, 1000).tolist()
+    data = []
+    for i in range(10):
+        data.append(i)
+    return data
 
 def process1(data: List[int]) -> List[int]:
     """TODO: Document this function. What does it do? What are the inputs and outputs?"""
